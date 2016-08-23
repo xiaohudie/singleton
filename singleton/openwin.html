@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .layer{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    opacity: .6;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 100px;
+  }
+  </style>
+</head>
+<body>
+  <a href="javascript:;" onclick="openwin();">登录</a>
+  </br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin();">评论</a>
+  </br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin();">发表</a>
+  <script src="login_win.js"></script>
+  <script>
+  function openwin (){
+    // alert("wewe");
+    var loginWin = LoginWinSingleton.getInstance();
+    loginWin.show();
+  }
+  </script>
+</body>
+</html>
